@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Menu/etc/menu.xsd">
+    <menu>
+        <add id="Abdroz_FoodMenu::food_menu" title="Food Menu" module="Abdroz_FoodMenu" sortOrder="20" resource="Abdroz_FoodMenu::food_menu"/>
+        <add id="Abdroz_FoodMenu::menu_list" title="Menu List" module="Abdroz_FoodMenu" sortOrder="20" parent="Abdroz_FoodMenu::food_menu" action="abdroz_foodmenu/menulist/index" resource="Abdroz_FoodMenu::menu_list"/>
+    </menu>
+</config>

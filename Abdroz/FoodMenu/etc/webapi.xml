@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/abdroz_foodmenu/getMenu/" method="GET">
+        <service class="Abdroz\FoodMenu\Api\FoodmenuRepositoryInterface" method="getMenu" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route url="/V1/abdroz_foodmenu/getMenuById/:id" method="GET">
+        <service class="Abdroz\FoodMenu\Api\FoodmenuRepositoryInterface" method="getId" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route url="/V1/abdroz_foodmenu/getMenuByName/:name" method="GET">
+        <service class="Abdroz\FoodMenu\Api\FoodmenuRepositoryInterface" method="getName" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route url="/V1/abdroz_foodmenu/getMenuByPrice/:price" method="GET">
+        <service class="Abdroz\FoodMenu\Api\FoodmenuRepositoryInterface" method="getPrice" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route url="/V1/abdroz_foodmenu/getMenuByStatus/:status" method="GET">
+        <service class="Abdroz\FoodMenu\Api\FoodmenuRepositoryInterface" method="getStatus" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route url="/V1/abdroz_foodmenu/getMenuByIngredients/:ingredients" method="GET">
+        <service class="Abdroz\FoodMenu\Api\FoodmenuRepositoryInterface" method="getIngredients" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+</routes>
